@@ -1,11 +1,14 @@
 Name:		alacenc
 Version:	0.4.1
-Release:	1
+Release:	2
 Summary:	Encode audio into the Apple Lossless Audio Codec (ALAC) format
 URL:		https://github.com/flacon/alacenc
 License:	GPL
 Group:		Sound/Utilities
 Source0:	https://github.com/flacon/alacenc/archive/v%{version}/%{name}-%{version}.tar.gz
+# See for patch - https://github.com/flacon/alacenc/issues/1
+Patch0:     https://github.com/flacon/alacenc/commit/7e8d065b7dd405f4be0841fed6887079992029d4.patch
+
 BuildSystem:	cmake
 BuildRequires:	cmake
 BuildRequires:	ninja
